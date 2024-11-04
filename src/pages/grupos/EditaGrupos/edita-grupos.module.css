@@ -1,0 +1,184 @@
+.wrapperNewGroup {
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .headerNewGroup {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconBack {
+    position: absolute;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+  }
+  
+  .headerNewGroup h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .containerNovoGrupo {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .dropdown {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 50px;
+  }
+  
+  .formRegisterLine1,
+  .formRegisterLine2,
+  .formRegisterLine3,
+  .formRegisterLine4,
+  .formRegisterLine5,
+  .formRegisterLine6 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .formRegisterLine1 div,
+  .formRegisterLine2 div,
+  .formRegisterLine3 div,
+  .formRegisterLine4 div,
+  .formRegisterLine5 div,
+  .formRegisterLine6 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.85rem;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 50px;
+  }
+  
+  .formRegisterLine2 {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .dropdownSelectedText {
+    width: 96%;
+    cursor: pointer;
+    padding: 6px 12px;
+    background-color: #fff0;
+    border-radius: 50px !important;
+    border: 1px solid #39b44a;
+    outline: #39b44a;
+    color: black !important;
+    user-select: none;
+  }
+  
+  .dropdownItems {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    max-height: 200px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #39b44a;
+    border-radius: 10px !important;
+    padding: 5px;
+    overflow-y: auto;
+  }
+  
+  .textInput,
+  .numberInput {
+    width: 100%;
+    cursor: pointer;
+    padding: 6px 12px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 1px solid #39b44a;
+    outline: #39b44a;
+    color: #000;
+    -webkit-user-select: none;
+    user-select: none;
+    font: 400 1rem "Poppins", sans-serif;
+  }
+  
+  .textInput::placeholder,
+  .numberInput::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #000 !important;
+    user-select: none;
+  }
+  
+  .groupSubmitButton {
+    background-color: #fff0;
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    border: 2px dashed #39b44a;
+    border-radius: 4px;
+    color: #39b44a;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms ease-in;
+  }
+  
+  .groupSubmitButton:hover {
+    background-color: #39b44a;
+    border: 2px solid #39b44a;
+    color: #fff;
+    transition: all 300ms ease-in;
+  }
+  
+  @media only screen and (max-width: 769px) {
+    .wrapperNewGroup {
+      padding: 2.5rem 1rem;
+    }
+    
+    .headerNewGroup h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+  
+    .formRegisterLine1,
+    .formRegisterLine2,
+    .formRegisterLine3,
+    .formRegisterLine4,
+    .formRegisterLine5,
+    .formRegisterLine6 {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .dropdown,
+    .textInput,
+    .numberInput {
+      max-width: 95%;
+  }
+  }

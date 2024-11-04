@@ -1,0 +1,83 @@
+.sidebar {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: calc(100% - 81.20px);
+  max-width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #d8f3da;
+  border: 1px solid #39b44a;
+  border-radius: 0 20px 20px 0;
+  transition: all 0.5s cubic-bezier(0.53, 0.21, 0, 1);
+  transform: translateX(0%);
+}
+
+.sidebar.collapsed {
+  width: fit-content;
+  transition: all 0.5s cubic-bezier(0.53, 0.21, 0, 1);
+  transform: translateX(-85%);
+  padding: 0 0 0 3rem;
+}
+
+.placeholder{
+  width:100%;
+  min-height: 1.8rem;
+  text-align: center;
+  opacity: 0;
+}
+
+.sidebarLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+
+.sidebarLinks a {
+  width: 80%;
+  text-align: left;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.sidebarLinks a.active {
+  border-bottom: 1px solid #39b44a;
+  color: #39b44a;
+  font-weight: 700;
+}
+
+.sidebarLinks.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.wrapperIconToggle {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconToggle {
+  width: 35px;
+  height: 35px;
+  color: #39b44a;
+  font-weight: 700;
+  padding: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1025px){
+  .sidebar {
+    display: none;
+  }
+}

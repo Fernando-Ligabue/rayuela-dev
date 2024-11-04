@@ -1,0 +1,102 @@
+.containerContacto{
+    width: 100%;
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0 0 0;
+}
+
+.containerContacto h1{
+    width: 100%;
+    text-align: left;
+    color: #39b44a;
+}
+
+.formContactPage{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font: 400 1rem "Poppins", sans-serif;
+}
+
+.formContactPage label{
+    width: 100%; 
+    text-align: left;
+}
+
+.formContactPage select,
+.formContactPage option{
+    width: 103%;
+    padding: 0.7rem;
+    border: 2px solid #39b44a;
+    border-radius: 15px; 
+    font: 400 1rem "Poppins", sans-serif;
+}
+
+.formContactPage input,
+.formContactPage textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px solid #39b44a;
+    border-radius: 15px; 
+    font: 400 1rem "Poppins", sans-serif;
+}
+.formContactPage input:focus,
+.formContactPage textarea:focus{
+    border: 2px solid #39b44a90;
+    outline: #39b44a;
+}
+
+.formContactPage textarea{
+    height: 120px;
+    resize: none; 
+}
+
+.btnSubmitContacto{
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 14px 20px;
+    border: 2px dashed #39b44a;
+    background-color: #FFF0;
+    font: 600 1rem "Poppins", sans-serif;
+    color: #39b44a;
+    transition: all 300ms ease-in;
+}
+
+.btnSubmitContacto:hover{
+    border: 2px solid #39b44a;
+    background-color: #39b44a;
+    color: #FFFFFF;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 769px){
+    .containerContacto{
+        max-width: 100%;
+        padding: 5.5rem 1.5rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 469px){
+    .btnSubmitContacto{
+        max-width: 100%;
+        margin: 1rem;
+    }
+
+    .btnSubmitContacto {
+        max-width: 100%;
+        margin: 1rem;
+    }
+    
+}

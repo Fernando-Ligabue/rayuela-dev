@@ -1,0 +1,111 @@
+.wrapperDownloadContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2.5rem ;
+  gap: 1rem;
+  flex: 1;
+}
+
+.wrapperDownloadContainer h1{
+  color: #39b44a;
+}
+
+
+.contentDownload {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.contentDownload img {
+  width: 48%;
+}
+
+.contentDownload p {
+  width: 48%;
+  padding: 0.5rem;
+  text-align: justify;
+}
+
+.wrapperButtons {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.titleDownload {
+  font: 600 1.5rem "Poppins", sans-serif;
+}
+
+.wrapperSingleButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wrapperSingleButtons a {
+  width: 280px;
+  background-color: #fff0;
+  font: 600 1.2rem "Poppins", sans-serif;
+  color: #39b44a;
+  text-decoration: none;
+  text-align: center;
+  border: 2px dashed #39b44a;
+  border-radius: 4px;
+  padding: 8px 15px;
+  transition: all 300ms ease-in;
+}
+
+.wrapperSingleButtons a:hover {
+  background-color: #39b44a;
+  color: #fff;
+  border: 2px solid #39b44a;
+  transition: all 300ms ease-in;
+}
+
+@media only screen and (max-width: 1025px) {
+  .contentDownload{
+    flex-direction: column-reverse;
+    padding: 0 1.5rem ;
+  }
+
+  .contentDownload img{
+    width: 45%;
+  }
+
+  .contentDownload p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .wrapperButtons {
+    padding: 0 0 5rem 0;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .contentDownload img{
+    width: 90%;
+  }
+  .wrapperSingleButtons {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 469px) {
+  .wrapperSingleButtons a {
+    width: 250px;
+  }
+  
+}

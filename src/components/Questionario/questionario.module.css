@@ -1,0 +1,34 @@
+.containerQuestion {
+    border: 2px dashed #39b44a;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+
+  .legendQuestion{
+    color: #39b44a;
+    font-weight: 600;
+    padding: 0 0.3rem;
+  }
+  
+  .labelQuestion {
+    display: block; 
+    margin-bottom: 10px; 
+    color: #39b44a;
+  }
+  
+  .selectQuestion {
+    border: 1px solid #39b44a;
+    border-radius: 25px;
+    padding: 8px 12px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  
+.inputQuestion[type="radio"] {
+    margin-right: 5px; 
+  }
+  
+  .questionsMark {
+    margin-bottom: 10px;
+  }

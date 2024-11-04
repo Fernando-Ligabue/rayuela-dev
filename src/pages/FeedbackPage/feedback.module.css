@@ -1,0 +1,121 @@
+.containerFeedback{
+    width: 100%;
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5rem 0 0 0;
+}
+
+.containerFeedback h1{
+    width: 100%;
+    text-align: left;
+    color: #39b44a;
+}
+
+.labelFeedback{
+    color: #39b44a;
+    font: 600 1rem "Poppins", sans-serif;
+}
+
+.checkboxGroup {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    gap: 10px;
+  }
+  
+  .checkboxGroup div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkboxGroup input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+  
+  .checkboxGroup label {
+    white-space: nowrap; 
+  }
+
+.formFeedbackPage{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    font: 400 1rem "Poppins", sans-serif;
+}
+
+.formFeedbackPage label{
+    width: 100%; 
+    text-align: left;
+}
+
+.formFeedbackPage input,
+.formFeedbackPage textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border: 2px solid #39b44a;
+    border-radius: 15px; 
+    font: 400 1rem "Poppins", sans-serif;
+}
+.formFeedbackPage input:focus,
+.formFeedbackPage textarea:focus{
+    border: 2px solid #39b44a90;
+    outline: #39b44a;
+}
+
+.formFeedbackPage textarea{
+    height: 120px;
+    resize: none; 
+}
+
+.btnSubmitFeedback{
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 14px 20px;
+    border: 2px dashed #39b44a;
+    background-color: #FFF0;
+    font: 600 1rem "Poppins", sans-serif;
+    color: #39b44a;
+    transition: all 300ms ease-in;
+}
+
+.btnSubmitFeedback:hover{
+    border: 2px solid #39b44a;
+    background-color: #39b44a;
+    color: #FFFFFF;
+    transition: all 300ms ease-in;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 769px){
+    .containerFeedback{
+        max-width: 100%;
+        padding: 5.5rem 1.5rem;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 469px){
+    .btnSubmitFeedback{
+        max-width: 100%;
+        margin: 1rem;
+    }
+
+    .btnSubmitFeedback {
+        max-width: 100%;
+        margin: 1rem;
+    }
+    
+}

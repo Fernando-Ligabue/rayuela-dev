@@ -1,0 +1,246 @@
+.containerSessions {
+  width: 100%;
+  padding: 4rem;
+}
+
+.containerSessions h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.accent {
+  color: #39b44a;
+}
+
+.wrapperHeaderSessions {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.headerSessions {
+  width: 100%;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem 0 0;
+}
+
+.arrowBackContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.exportBtns{
+  display: flex;
+  gap: 1rem;
+}
+
+.button{
+  font: 500 1rem "Poppins", sans-serif;
+  width: 150px;
+  background-color: #FFF0;
+  color: #39b44a;
+  border: 1px dashed #39b44a;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 15px;
+  cursor: pointer;
+}
+
+.arrowBack {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.sessionsTableWrapper {
+  width: 100%;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 2rem;
+}
+.sessionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.sessionsTable::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sessionsTable::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sessionsTable::-webkit-scrollbar-thumb {
+  background-color: #39b44a;
+  outline: 1px solid #39b44a;
+}
+
+.sessionsTable th,
+.sessionsTable td {
+  padding: 4px 15px;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  min-width: 150px;
+}
+
+.sessionsTable th {
+  background-color: #f2f2f2;
+  color: #39b44a;
+  font-weight: 700;
+  border-bottom: 2px solid #39b44a;
+}
+
+.tableWrapper > table > tbody > tr {
+  height: 50px !important;
+}
+
+.sessionsTable td:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.sessionsTable td:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+.sessionsTable tr:hover {
+  background-color: #f3f3f3;
+}
+.wrapperActions div {
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.filesField {
+  font-size: 0.75rem;
+}
+
+.filesField span {
+  color: #000;
+  text-decoration: none;
+}
+
+.filesField a {
+  color: #39b44a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lastField {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.wrapperIconsActions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.delete{
+  color: #EB008B;
+  cursor: pointer;
+}
+
+.edit{
+  color: #00ADEE;
+  cursor: pointer;
+}
+
+
+/* modal css */
+.modal {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent{
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modalContent h4{
+  color: #39b44a;
+  font: 400 1.3rem "Poppins", sans-serif;
+}
+
+.modalBtnWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.confirm,  .cancel{
+  font: 400 0.9rem "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.confirm{
+  background-color: #FFF0;
+  color: #39b44a;
+  border-radius: 4px;
+  border: 1px dashed #39b44a;
+}
+
+.cancel{
+  background-color: #FFF0;
+  border-radius: 4px;
+  color: #EB008B;
+  border: 1px dashed #EB008B;
+}
+
+
+
+@media only screen and (max-width: 1025px) {
+  .containerSessions {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 769px){
+  .containerSessions {
+    padding: 3.5rem 1rem;
+  }
+
+  .containerSessions h1{
+      font-size: 1.8rem;
+      font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 569px){
+  .buttonContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+  
+}
